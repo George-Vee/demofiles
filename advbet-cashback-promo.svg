@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <!-- Base gradients -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1414"/>
+      <stop offset="50%" stop-color="#161c1c"/>
+      <stop offset="100%" stop-color="#0a1010"/>
+    </linearGradient>
+
+    <!-- Teal radial glow left -->
+    <radialGradient id="glowLeft" cx="25%" cy="60%" r="45%">
+      <stop offset="0%" stop-color="#00C4B4" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#00C4B4" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Teal radial glow right -->
+    <radialGradient id="glowRight" cx="78%" cy="40%" r="35%">
+      <stop offset="0%" stop-color="#00C4B4" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#00C4B4" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Text shimmer -->
+    <linearGradient id="textShimmer" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#00C4B4"/>
+      <stop offset="40%"  stop-color="#33ddd0"/>
+      <stop offset="70%"  stop-color="#00e8d6"/>
+      <stop offset="100%" stop-color="#00a99a"/>
+    </linearGradient>
+
+    <!-- percent sign gradient -->
+    <linearGradient id="pctGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#33ddd0"/>
+      <stop offset="100%" stop-color="#00a99a"/>
+    </linearGradient>
+
+    <!-- Chip/badge gradient -->
+    <linearGradient id="chipGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#00C4B4" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#00C4B4" stop-opacity="0.08"/>
+    </linearGradient>
+
+    <!-- Divider line gradient -->
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#00C4B4" stop-opacity="0"/>
+      <stop offset="20%"  stop-color="#00C4B4" stop-opacity="0.6"/>
+      <stop offset="80%"  stop-color="#00C4B4" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#00C4B4" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Circle ring gradient -->
+    <radialGradient id="ringGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="70%"  stop-color="#00C4B4" stop-opacity="0"/>
+      <stop offset="85%"  stop-color="#00C4B4" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00C4B4" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Hex fill -->
+    <linearGradient id="hexFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#00C4B4" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#00C4B4" stop-opacity="0.04"/>
+    </linearGradient>
+
+    <clipPath id="mainClip">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#mainClip)">
+
+    <!-- ── BASE BACKGROUND ──────────────────────────────────────── -->
+    <rect width="1920" height="1080" fill="url(#bgGrad)"/>
+
+    <!-- ── GLOW ORBS ─────────────────────────────────────────────── -->
+    <rect width="1920" height="1080" fill="url(#glowLeft)"/>
+    <rect width="1920" height="1080" fill="url(#glowRight)"/>
+
+    <!-- ── DIAGONAL STRIPE TEXTURE ──────────────────────────────── -->
+    <g opacity="0.06">
+      <!-- diagonal lines repeated -->
+      <line x1="-200" y1="0"    x2="400"  y2="1080" stroke="#00C4B4" stroke-width="1"/>
+      <line x1="0"    y1="0"    x2="600"  y2="1080" stroke="#00C4B4" stroke-width="1"/>
+      <line x1="200"  y1="0"    x2="800"  y2="1080" stroke="#00C4B4" stroke-width="1"/>
+      <line x1="400"  y1="0"    x2="1000" y2="1080" stroke="#00C4B4" stroke-width="1"/>
+      <line x1="600"  y1="0"    x2="1200" y2="1080" stroke="#00C4B4" stroke-width="1"/>
+      <line x1="800"  y1="0"    x2="1400" y2="1080" stroke="#00C4B4" stroke-width="1"/>
+      <line x1="1000" y1="0"    x2="1600" y2="1080" stroke="#00C4B4" stroke-width="1"/>
+      <line x1="1200" y1="0"    x2="1800" y2="1080" stroke="#00C4B4" stroke-width="1"/>
+      <line x1="1400" y1="0"    x2="2000" y2="1080" stroke="#00C4B4" stroke-width="1"/>
+      <line x1="1600" y1="0"    x2="2200" y2="1080" stroke="#00C4B4" stroke-width="1"/>
+    </g>
+
+    <!-- ── LARGE DECORATIVE RINGS (right side) ───────────────────── -->
+    <circle cx="1420" cy="540" r="380" fill="url(#ringGrad)" stroke="none"/>
+    <circle cx="1420" cy="540" r="280" fill="none" stroke="#00C4B4" stroke-width="0.5" opacity="0.15"/>
+    <circle cx="1420" cy="540" r="180" fill="none" stroke="#00C4B4" stroke-width="0.5" opacity="0.1"/>
+    <circle cx="1420" cy="540" r="480" fill="none" stroke="#00C4B4" stroke-width="0.5" opacity="0.08"/>
+
+    <!-- Large decorative ring left (subtle) -->
+    <circle cx="140"  cy="200"  r="220" fill="none" stroke="#00C4B4" stroke-width="0.5" opacity="0.1"/>
+    <circle cx="140"  cy="200"  r="140" fill="none" stroke="#00C4B4" stroke-width="0.5" opacity="0.07"/>
+
+    <!-- ── FLOATING HEXAGONS ──────────────────────────────────────── -->
+    <!-- Large hex top-right -->
+    <polygon points="1600,80 1660,114 1660,182 1600,216 1540,182 1540,114"
+             fill="url(#hexFill)" stroke="#00C4B4" stroke-width="1" opacity="0.5"/>
+    <!-- Medium hex bottom-left -->
+    <polygon points="180,820 225,846 225,898 180,924 135,898 135,846"
+             fill="url(#hexFill)" stroke="#00C4B4" stroke-width="1" opacity="0.4"/>
+    <!-- Small hex mid-right -->
+    <polygon points="1750,400 1780,418 1780,454 1750,472 1720,454 1720,418"
+             fill="url(#hexFill)" stroke="#00C4B4" stroke-width="0.8" opacity="0.35"/>
+    <!-- Tiny hex accent -->
+    <polygon points="1820,700 1840,712 1840,736 1820,748 1800,736 1800,712"
+             fill="none" stroke="#00C4B4" stroke-width="0.7" opacity="0.3"/>
+    <!-- Tiny hex top-left -->
+    <polygon points="320,120 342,133 342,159 320,172 298,159 298,133"
+             fill="none" stroke="#00C4B4" stroke-width="0.8" opacity="0.3"/>
+
+    <!-- ── DOT GRID ACCENT (bottom left corner) ──────────────────── -->
+    <g fill="#00C4B4" opacity="0.18">
+      <circle cx="60"  cy="960" r="2"/><circle cx="100" cy="960" r="2"/><circle cx="140" cy="960" r="2"/>
+      <circle cx="180" cy="960" r="2"/><circle cx="220" cy="960" r="2"/>
+      <circle cx="60"  cy="1000" r="2"/><circle cx="100" cy="1000" r="2"/><circle cx="140" cy="1000" r="2"/>
+      <circle cx="180" cy="1000" r="2"/><circle cx="220" cy="1000" r="2"/>
+      <circle cx="60"  cy="1040" r="2"/><circle cx="100" cy="1040" r="2"/><circle cx="140" cy="1040" r="2"/>
+      <circle cx="180" cy="1040" r="2"/>
+    </g>
+
+    <!-- ── LEFT ACCENT BAR ────────────────────────────────────────── -->
+    <rect x="100" y="260" width="4" height="480" rx="2" fill="#00C4B4" opacity="0.7"/>
+    <rect x="100" y="260" width="4" height="480" rx="2" fill="#00C4B4" opacity="0.3"
+          filter="url(#blurNone)"/>
+
+    <!-- Teal dot top of bar -->
+    <circle cx="102" cy="252" r="6" fill="#00C4B4" opacity="0.9"/>
+    <circle cx="102" cy="252" r="12" fill="#00C4B4" opacity="0.2"/>
+    <!-- Teal dot bottom of bar -->
+    <circle cx="102" cy="748" r="6" fill="#00C4B4" opacity="0.9"/>
+    <circle cx="102" cy="748" r="12" fill="#00C4B4" opacity="0.2"/>
+
+    <!-- ── TOP EYEBROW LINE ───────────────────────────────────────── -->
+    <rect x="140" y="262" width="1200" height="1.5" rx="1" fill="url(#lineGrad)" opacity="0.5"/>
+
+    <!-- ── LOGO / WORDMARK ───────────────────────────────────────── -->
+    <text x="148" y="320"
+          font-family="'din-2014','Roboto Condensed','Arial Narrow',sans-serif"
+          font-size="32" font-weight="700" letter-spacing="6"
+          fill="#00C4B4" opacity="0.9">ADV<tspan fill="#e8f2f1" opacity="0.7">.BET</tspan></text>
+
+    <!-- ── EYEBROW LABEL ─────────────────────────────────────────── -->
+    <text x="148" y="370"
+          font-family="'JetBrains Mono','Courier New',monospace"
+          font-size="13" font-weight="400" letter-spacing="5"
+          fill="#00C4B4" opacity="0.6"
+          text-transform="uppercase">WEEKLY CASHBACK OFFER</text>
+
+    <!-- dot separator -->
+    <circle cx="148" cy="400" r="3" fill="#00C4B4" opacity="0.5"/>
+    <rect x="160" y="398.5" width="80" height="1.5" rx="1" fill="#00C4B4" opacity="0.3"/>
+
+    <!-- ── MAIN "30%" DISPLAY ─────────────────────────────────────── -->
+    <!-- Shadow layer -->
+    <text x="150" y="700"
+          font-family="'din-2014','Roboto Condensed','Arial Narrow',sans-serif"
+          font-size="420" font-weight="900" letter-spacing="-10"
+          fill="#00C4B4" opacity="0.04">30%</text>
+
+    <!-- Main number -->
+    <text x="148" y="692"
+          font-family="'din-2014','Roboto Condensed','Arial Narrow',sans-serif"
+          font-size="400" font-weight="900" letter-spacing="-10"
+          fill="url(#textShimmer)">30</text>
+
+    <!-- % sign — separate, lighter -->
+    <text x="710" y="692"
+          font-family="'din-2014','Roboto Condensed','Arial Narrow',sans-serif"
+          font-size="220" font-weight="700" letter-spacing="0"
+          fill="url(#pctGrad)" opacity="0.85">%</text>
+
+    <!-- ── "CASHBACK" TEXT ────────────────────────────────────────── -->
+    <text x="148" y="800"
+          font-family="'din-2014','Roboto Condensed','Arial Narrow',sans-serif"
+          font-size="110" font-weight="700" letter-spacing="28"
+          fill="#e8f2f1" opacity="0.9">CASHBACK</text>
+
+    <!-- ── BOTTOM DIVIDER ────────────────────────────────────────── -->
+    <rect x="140" y="832" width="1000" height="1.5" rx="1" fill="url(#lineGrad)" opacity="0.4"/>
+
+    <!-- ── TERMS CHIPS ROW ────────────────────────────────────────── -->
+    <!-- Chip 1: Every week -->
+    <rect x="148" y="856" width="160" height="36" rx="18"
+          fill="url(#chipGrad)" stroke="#00C4B4" stroke-width="1" opacity="0.8"/>
+    <text x="228" y="878"
+          font-family="'din-2014','Roboto',sans-serif"
+          font-size="13" font-weight="500" text-anchor="middle"
+          fill="#00C4B4">Every week</text>
+
+    <!-- Chip 2: Min R50 deposit -->
+    <rect x="322" y="856" width="180" height="36" rx="18"
+          fill="url(#chipGrad)" stroke="#00C4B4" stroke-width="1" opacity="0.8"/>
+    <text x="412" y="878"
+          font-family="'din-2014','Roboto',sans-serif"
+          font-size="13" font-weight="500" text-anchor="middle"
+          fill="#00C4B4">Min R50 deposit</text>
+
+    <!-- Chip 3: Auto credited -->
+    <rect x="516" y="856" width="168" height="36" rx="18"
+          fill="url(#chipGrad)" stroke="#00C4B4" stroke-width="1" opacity="0.8"/>
+    <text x="600" y="878"
+          font-family="'din-2014','Roboto',sans-serif"
+          font-size="13" font-weight="500" text-anchor="middle"
+          fill="#00C4B4">Auto credited</text>
+
+    <!-- Chip 4: T&Cs apply -->
+    <rect x="698" y="856" width="130" height="36" rx="18"
+          fill="none" stroke="#00C4B4" stroke-width="0.8" opacity="0.4"/>
+    <text x="763" y="878"
+          font-family="'din-2014','Roboto',sans-serif"
+          font-size="12" font-weight="400" text-anchor="middle"
+          fill="#7aa8a4" opacity="0.7">T&amp;Cs apply</text>
+
+    <!-- ── BOTTOM TAG LINE ────────────────────────────────────────── -->
+    <text x="148" y="970"
+          font-family="'din-2014','Roboto',sans-serif"
+          font-size="16" font-weight="300" letter-spacing="2"
+          fill="#7aa8a4" opacity="0.6">Bet smart. Win more. Every week.</text>
+
+    <!-- ── RIGHT SIDE DECORATIVE LINES ───────────────────────────── -->
+    <line x1="1100" y1="200" x2="1900" y2="200" stroke="#00C4B4" stroke-width="0.5" opacity="0.12"/>
+    <line x1="1100" y1="880" x2="1900" y2="880" stroke="#00C4B4" stroke-width="0.5" opacity="0.12"/>
+
+    <!-- Cross-hair detail at right center -->
+    <line x1="1420" y1="480" x2="1420" y2="600" stroke="#00C4B4" stroke-width="1" opacity="0.3"/>
+    <line x1="1360" y1="540" x2="1480" y2="540" stroke="#00C4B4" stroke-width="1" opacity="0.3"/>
+    <circle cx="1420" cy="540" r="5" fill="none" stroke="#00C4B4" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="1420" cy="540" r="2" fill="#00C4B4" opacity="0.6"/>
+
+    <!-- ── SUBTLE BOTTOM VIGNETTE ─────────────────────────────────── -->
+    <rect x="0" y="900" width="1920" height="180" fill="url(#bgGrad)" opacity="0.4"/>
+  </g>
+</svg>
